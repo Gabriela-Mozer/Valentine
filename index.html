@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Judson&family=Lato:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2 class="header">Will you be my Valentine?</h2>
+    <div class="button-container">
+      <button
+        class="yes-answet"
+        id="yes-answer"
+        onclick="showLoadingHearts(showYesMessage)"
+      >
+        YES
+      </button>
+      <button
+        class="no-answer"
+        id="no-answer"
+        onclick="showLoadingHearts(showNoMessage)"
+      >
+        NO
+      </button>
+    </div>
+
+    <div class="loading-container" id="loading"></div>
+
+    <div class="message-container">
+      <span id="cool"></span>
+      <span id="fuck"></span>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
